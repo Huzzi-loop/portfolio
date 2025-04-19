@@ -161,7 +161,7 @@ const Navbar = ({ toggleTheme, theme }) => {
               .scrollIntoView({ behavior: "smooth" })
           }
         >
-          HC.dev
+          Huzzi
         </Logo>
 
         <NavLinks>
