@@ -413,7 +413,17 @@ const Hero = () => {
               delay: 0.2,
             }}
           >
-            <AvatarPlaceholder>HC</AvatarPlaceholder>
+            <img
+              src="/src/assets/profile.png"
+              alt="Huzefa Chaiwala"
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                borderRadius: "50%",
+              }}
+            />
+            {/* <AvatarPlaceholder>HC</AvatarPlaceholder> */}
           </ProfileAvatar>
         </HeroImage>
       </ContentContainer>
