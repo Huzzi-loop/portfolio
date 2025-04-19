@@ -445,7 +445,7 @@ const Contact = () => {
                   <FiLinkedin />
                 </SocialLink>
                 <SocialLink
-                  href="https://github.com/Huzefa52"
+                  href="https://github.com/Huzzi-loop"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ y: -5 }}

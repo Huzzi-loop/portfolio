@@ -243,8 +243,8 @@ const About = () => {
               variants={codeVariants}
             >
               <CodeLine lineNum="01" variants={lineVariants}>
-                <Keyword>class</Keyword>{" "}
-                <FunctionName>SoftwareEngineer</FunctionName> {"{"}
+                <Keyword>class</Keyword>
+                <FunctionName>SoftwareEngineer</FunctionName> {" {"}
               </CodeLine>
               <CodeLine lineNum="02" variants={lineVariants}>
                 {"  "}
