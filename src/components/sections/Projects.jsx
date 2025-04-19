@@ -332,7 +332,7 @@ const Projects = () => {
       title: "E-Commerce Platform",
       description:
         "A scalable e-commerce platform built with microservice architecture, featuring secure payment processing and authentication.",
-      image: "/images/projects/ecommerce.jpg",
+      image: "/src/assets/projects/ecommerce.png",
       techStack: ["Java", "Spring Boot", "Stripe", "OAuth2", "Redis"],
       highlights: [
         "Microservice architecture",
@@ -346,7 +346,7 @@ const Projects = () => {
       title: "In-Memory Cache System",
       description:
         "An efficient in-memory caching system implementing popular eviction algorithms and extensible design patterns for optimal performance.",
-      image: "/images/projects/cache-system.jpg",
+      image: "/src/assets/projects/cache.png",
       techStack: ["Java", "Design Patterns", "Algorithms"],
       highlights: [
         "Implements LRU/Random eviction",
