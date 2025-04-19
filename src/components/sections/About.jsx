@@ -243,84 +243,83 @@ const About = () => {
               variants={codeVariants}
             >
               <CodeLine lineNum="01" variants={lineVariants}>
-                <Keyword>class</Keyword>
-                <FunctionName>SoftwareEngineer</FunctionName> {" {"}
+                <Keyword>class</Keyword>&nbsp;
+                <FunctionName>SoftwareEngineer</FunctionName> &nbsp;{"{"}
               </CodeLine>
               <CodeLine lineNum="02" variants={lineVariants}>
-                {"  "}
-                <Keyword>constructor</Keyword>() {"{"}
+                &nbsp;<Keyword>constructor</Keyword>() {"{"}
               </CodeLine>
               <CodeLine lineNum="03" variants={lineVariants}>
-                {"    "}
+                &nbsp;&nbsp;
                 <Variable>this</Variable>.<Variable>name</Variable> ={" "}
                 <String>"Huzefa Chaiwala"</String>;
               </CodeLine>
               <CodeLine lineNum="04" variants={lineVariants}>
-                {"    "}
+                &nbsp;&nbsp;
                 <Variable>this</Variable>.<Variable>title</Variable> ={" "}
                 <String>"Software Engineer"</String>;
               </CodeLine>
               <CodeLine lineNum="05" variants={lineVariants}>
-                {"    "}
+                &nbsp;&nbsp;
                 <Variable>this</Variable>.<Variable>location</Variable> ={" "}
                 <String>"Kolkata, India"</String>;
               </CodeLine>
               <CodeLine lineNum="06" variants={lineVariants}>
-                {"    "}
+                &nbsp;&nbsp;
                 <Variable>this</Variable>.<Variable>skills</Variable> = [
                 <String>"Node.js"</String>, <String>"Java"</String>,{" "}
                 <String>"AWS"</String>, <String>"React"</String>];
               </CodeLine>
               <CodeLine lineNum="07" variants={lineVariants}>
-                {"  "}
+                &nbsp;
                 {"}"};
               </CodeLine>
               <CodeLine lineNum="08" variants={lineVariants}>
                 {" "}
               </CodeLine>
               <CodeLine lineNum="09" variants={lineVariants}>
-                {"  "}
+                &nbsp;
                 <FunctionName>buildScalableSolutions</FunctionName>() {"{"}
               </CodeLine>
               <CodeLine lineNum="10" variants={lineVariants}>
-                {"    "}
+                &nbsp;&nbsp;
                 <Keyword>return</Keyword>{" "}
                 <String>"Clean architecture + Efficient code"</String>;
               </CodeLine>
               <CodeLine lineNum="11" variants={lineVariants}>
-                {"  "}
+                &nbsp;
                 {"}"};
               </CodeLine>
               <CodeLine lineNum="12" variants={lineVariants}>
                 {" "}
               </CodeLine>
               <CodeLine lineNum="13" variants={lineVariants}>
-                {"  "}
+                &nbsp;
                 <FunctionName>solveProblems</FunctionName>(
                 <Variable>problem</Variable>) {"{"}
               </CodeLine>
               <CodeLine lineNum="14" variants={lineVariants}>
-                {"    "}
+                &nbsp;&nbsp;
                 <Keyword>const</Keyword> <Variable>solution</Variable> ={" "}
                 <Variable>analyze</Variable>(<Variable>problem</Variable>)
               </CodeLine>
               <CodeLine lineNum="15" variants={lineVariants}>
-                {"      "}
+                &nbsp;&nbsp;&nbsp;
                 <Punctuation>.</Punctuation>
                 <Variable>plan</Variable>()
               </CodeLine>
               <CodeLine lineNum="16" variants={lineVariants}>
-                {"      "}
+                &nbsp;&nbsp;&nbsp;
                 <Punctuation>.</Punctuation>
                 <Variable>implement</Variable>()
               </CodeLine>
               <CodeLine lineNum="17" variants={lineVariants}>
-                {"      "}
+                &nbsp;&nbsp;&nbsp;
                 <Punctuation>.</Punctuation>
                 <Variable>test</Variable>()
               </CodeLine>
               <CodeLine lineNum="18" variants={lineVariants}>
-                {"      "}
+                &nbsp;&nbsp;&nbsp;
                 <Punctuation>.</Punctuation>
                 <Variable>deploy</Variable>();
               </CodeLine>
@@ -328,11 +327,11 @@ const About = () => {
                 {" "}
               </CodeLine>
               <CodeLine lineNum="20" variants={lineVariants}>
-                {"    "}
+                &nbsp;&nbsp;
                 <Keyword>return</Keyword> <Variable>solution</Variable>;
               </CodeLine>
               <CodeLine lineNum="21" variants={lineVariants}>
-                {"  "}
+                &nbsp;
                 {"}"};
               </CodeLine>
               <CodeLine lineNum="22" variants={lineVariants}>
