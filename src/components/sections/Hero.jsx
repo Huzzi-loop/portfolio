@@ -347,7 +347,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            Software Engineer | Backend & Full Stack Developer
+            Software Engineer | Backend Heavy Full Stack Developer
           </Title>
 
           <Tagline
@@ -381,7 +381,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 1 }}
           >
             <PrimaryButton
-              href="#"
+              href="https://drive.google.com/file/d/1Nf7_NEBifUtnRhsyEmIFaxwxXxAzG2gz/view?usp=sharing"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
