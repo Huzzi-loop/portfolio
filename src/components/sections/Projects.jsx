@@ -352,8 +352,21 @@ const Projects = () => {
         "Implements LRU/Random eviction",
         "Uses Strategy & Observer design patterns",
       ],
-      github: "https://github.com/Huzefa52/In-Memory-Cache-Java",
+      github: "https://github.com/Huzzi-loop/in-memory-cache",
       live: "",
+    },
+    {
+      title: "Sorting Visualizer",
+      description:
+        "A web-based sorting visualizer that demonstrates various sorting algorithms in real-time, helping users understand their efficiency and mechanics.",
+      image: "/src/assets/projects/sorting.png",
+      techStack: ["React", "DSA"],
+      highlights: [
+        "Implements sorting algorithms like BubbleSort, SelectionSort, QuickSort and MergeSort",
+        "Interactive UI for real-time visualization",
+      ],
+      github: "https://github.com/Huzzi-loop/SortingVisualiser",
+      live: "https://sortvisualiser.web.app/",
     },
   ];
 
@@ -409,18 +422,6 @@ const Projects = () => {
     setCurrentPage(pageIndex);
   };
 
-  // Calculate visible projects
-  const visibleProjects = [];
-  for (let i = 0; i < itemsPerPage; i++) {
-    const projectIndex = currentPage * itemsPerPage + i;
-    if (projectIndex < projects.length) {
-      visibleProjects.push(projects[projectIndex]);
-    } else {
-      // Add empty slot to maintain grid layout
-      visibleProjects.push(null);
-    }
-  }
-
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -470,60 +471,62 @@ const Projects = () => {
           >
             {projects.map((project, index) => (
               <CarouselCard key={index}>
-                <ProjectCard variants={cardVariants}>
-                  {project.image ? (
-                    <ProjectImage>
-                      <img src={project.image} alt={project.title} />
-                    </ProjectImage>
-                  ) : (
-                    <ProjectImagePlaceholder>
-                      {project.title ? project.title.charAt(0) : ""}
-                    </ProjectImagePlaceholder>
-                  )}
-                  <ProjectContent>
-                    <ProjectTitle>{project.title}</ProjectTitle>
-                    <ProjectDescription>
-                      {project.description}
-                    </ProjectDescription>
+                {project && (
+                  <ProjectCard variants={cardVariants}>
+                    {project.image ? (
+                      <ProjectImage>
+                        <img src={project.image} alt={project.title} />
+                      </ProjectImage>
+                    ) : (
+                      <ProjectImagePlaceholder>
+                        {project.title ? project.title.charAt(0) : ""}
+                      </ProjectImagePlaceholder>
+                    )}
+                    <ProjectContent>
+                      <ProjectTitle>{project.title}</ProjectTitle>
+                      <ProjectDescription>
+                        {project.description}
+                      </ProjectDescription>
 
-                    <TechStack>
-                      {project.techStack.map((tech, i) => (
-                        <TechTag key={i}>{tech}</TechTag>
-                      ))}
-                    </TechStack>
+                      <TechStack>
+                        {project.techStack.map((tech, i) => (
+                          <TechTag key={i}>{tech}</TechTag>
+                        ))}
+                      </TechStack>
 
-                    <HighlightsList>
-                      {project.highlights.map((highlight, i) => (
-                        <HighlightItem key={i}>{highlight}</HighlightItem>
-                      ))}
-                    </HighlightsList>
+                      <HighlightsList>
+                        {project.highlights.map((highlight, i) => (
+                          <HighlightItem key={i}>{highlight}</HighlightItem>
+                        ))}
+                      </HighlightsList>
 
-                    <ProjectLinks>
-                      {project.github && (
-                        <ProjectLink
-                          href={project.github}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          whileHover={{ scale: 1.05 }}
-                          whileTap={{ scale: 0.95 }}
-                        >
-                          <FiGithub /> GitHub
-                        </ProjectLink>
-                      )}
-                      {project.live && (
-                        <ProjectLink
-                          href={project.live}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          whileHover={{ scale: 1.05 }}
-                          whileTap={{ scale: 0.95 }}
-                        >
-                          <FiExternalLink /> Live Demo
-                        </ProjectLink>
-                      )}
-                    </ProjectLinks>
-                  </ProjectContent>
-                </ProjectCard>
+                      <ProjectLinks>
+                        {project.github && (
+                          <ProjectLink
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                          >
+                            <FiGithub /> GitHub
+                          </ProjectLink>
+                        )}
+                        {project.live && (
+                          <ProjectLink
+                            href={project.live}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                          >
+                            <FiExternalLink /> Live Demo
+                          </ProjectLink>
+                        )}
+                      </ProjectLinks>
+                    </ProjectContent>
+                  </ProjectCard>
+                )}
               </CarouselCard>
             ))}
           </CarouselTrack>
