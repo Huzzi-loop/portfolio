@@ -39,7 +39,6 @@ const CarouselTrack = styled(motion.div)`
   display: flex;
   width: 100%;
   padding: 1rem 0;
-  overflow: hidden; /* Prevent elements from spilling outside */
 `;
 
 const CarouselCard = styled(motion.div)`
@@ -225,7 +224,7 @@ const CarouselButton = styled(motion.button)`
   height: 40px;
   border-radius: 50%;
   background: ${({ theme }) => theme.cardBg};
-  border: none;
+  border: 1px solid ${({ theme }) => theme.border};
   display: flex;
   align-items: center;
   justify-content: center;
