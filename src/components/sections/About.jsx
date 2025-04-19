@@ -199,7 +199,7 @@ const About = () => {
               animate={controls}
               variants={fadeInUpVariants}
             >
-              <FiUser /> Software Engineer based in Kolkata, India
+              <FiUser /> Software Engineer based in India
             </AboutSubtitle>
 
             <AboutDescription
