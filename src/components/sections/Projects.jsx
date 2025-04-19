@@ -229,7 +229,6 @@ const CarouselButton = styled(motion.button)`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
   color: ${({ theme }) => theme.text};
   cursor: pointer;
   box-shadow: ${({ theme }) => theme.shadow};
@@ -251,6 +250,12 @@ const CarouselButton = styled(motion.button)`
     width: 35px;
     height: 35px;
     font-size: 1rem;
+  }
+
+  svg {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
   }
 `;
 

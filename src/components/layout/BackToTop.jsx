@@ -21,13 +21,17 @@ const BackToTopButton = styled(motion.button)`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   z-index: 99;
 
   &:hover {
     transform: translateY(-3px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  svg {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
   }
 `;
 

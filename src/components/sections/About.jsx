@@ -283,7 +283,7 @@ const About = () => {
               </CodeLine>
               <CodeLine lineNum="10" variants={lineVariants}>
                 &nbsp;&nbsp;
-                <Keyword>return</Keyword>{" "}
+                <Keyword>return</Keyword>&nbsp;
                 <String>"Clean architecture + Efficient code"</String>;
               </CodeLine>
               <CodeLine lineNum="11" variants={lineVariants}>
@@ -300,7 +300,7 @@ const About = () => {
               </CodeLine>
               <CodeLine lineNum="14" variants={lineVariants}>
                 &nbsp;&nbsp;
-                <Keyword>const</Keyword> <Variable>solution</Variable> ={" "}
+                <Keyword>const</Keyword> &nbsp;<Variable>solution</Variable> ={" "}
                 <Variable>analyze</Variable>(<Variable>problem</Variable>)
               </CodeLine>
               <CodeLine lineNum="15" variants={lineVariants}>
@@ -328,7 +328,7 @@ const About = () => {
               </CodeLine>
               <CodeLine lineNum="20" variants={lineVariants}>
                 &nbsp;&nbsp;
-                <Keyword>return</Keyword> <Variable>solution</Variable>;
+                <Keyword>return</Keyword>&nbsp; <Variable>solution</Variable>;
               </CodeLine>
               <CodeLine lineNum="21" variants={lineVariants}>
                 &nbsp;
