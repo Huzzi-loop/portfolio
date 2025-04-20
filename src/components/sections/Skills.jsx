@@ -11,6 +11,9 @@ import {
   FaGitAlt,
   FaAws,
   FaDatabase,
+  FaSync,
+  FaLeaf,
+  FaSitemap,
 } from "react-icons/fa";
 import {
   SiTypescript,
@@ -173,12 +176,12 @@ const Skills = () => {
     {
       title: "Languages",
       skills: [
-        { name: "JavaScript", icon: <FaJs />, color: "#f7df1e", level: 90 },
+        { name: "JavaScript", icon: <FaJs />, color: "#f7df1e", level: 95 },
         {
           name: "TypeScript",
           icon: <SiTypescript />,
           color: "#3178c6",
-          level: 85,
+          level: 65,
         },
         { name: "Java", icon: <FaJava />, color: "#007396", level: 80 },
         { name: "SQL", icon: <FaDatabase />, color: "#f29111", level: 85 },
@@ -190,7 +193,7 @@ const Skills = () => {
         { name: "Node.js", icon: <FaNodeJs />, color: "#68a063", level: 90 },
         { name: "Express", icon: <SiExpress />, color: "#ffffff", level: 90 },
         { name: "React", icon: <FaReact />, color: "#61dafb", level: 85 },
-        { name: "NestJS", icon: <SiNestjs />, color: "#e0234e", level: 80 },
+        { name: "NestJS", icon: <SiNestjs />, color: "#e0234e", level: 75 },
         {
           name: "Spring Boot",
           icon: <SiSpringboot />,
@@ -201,7 +204,7 @@ const Skills = () => {
           name: "React Native",
           icon: <FaReact />,
           color: "#61dafb",
-          level: 70,
+          level: 80,
         },
       ],
     },
@@ -211,17 +214,25 @@ const Skills = () => {
         { name: "Docker", icon: <FaDocker />, color: "#2496ed", level: 80 },
         { name: "Git", icon: <FaGitAlt />, color: "#f05032", level: 90 },
         { name: "Prisma", icon: <SiPrisma />, color: "#5a67d8", level: 85 },
-        { name: "AWS", icon: <FaAws />, color: "#ff9900", level: 80 },
+        { name: "AWS", icon: <FaAws />, color: "#ff9900", level: 90 },
         { name: "Redis", icon: <SiRedis />, color: "#dc382d", level: 75 },
+        {
+          name: "MongoBD",
+          icon: <FaLeaf color="green" />,
+          color: "#dc382d",
+          level: 65,
+        },
+        { name: "Powersync", icon: <FaSync />, color: "#dc382d", level: 75 },
       ],
     },
     {
       title: "Concepts",
       skills: [
+        { name: "DSA", icon: <FaSitemap />, level: 90 },
         { name: "REST APIs", icon: <TbApi />, level: 90 },
         { name: "System Design", icon: <GrSystem />, level: 80 },
-        { name: "Microservices", icon: <BsServer />, level: 80 },
-        { name: "Low-Level Design", icon: <SiReacthookform />, level: 75 },
+        { name: "Microservices", icon: <BsServer />, level: 85 },
+        { name: "Low-Level Design", icon: <SiReacthookform />, level: 80 },
       ],
     },
   ];

@@ -227,6 +227,12 @@ const SocialLink = styled(motion.a)`
   }
 `;
 
+const ErrorText = styled.p`
+  color: #ff595e;
+  font-size: 0.85rem;
+  margin: 0.3rem 0 0 0;
+`;
+
 const Contact = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
@@ -247,7 +253,19 @@ const Contact = () => {
     message: "",
   });
 
+  const [errors, setErrors] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
   const formRef = useRef(null);
+
+  const emailjsConfig = {
+    serviceId: "",
+    templateId: "",
+    publicKey: "",
+  };
 
   useEffect(() => {
     if (inView) {
@@ -255,15 +273,45 @@ const Contact = () => {
     }
   }, [controls, inView]);
 
+  const validateForm = () => {
+    let valid = true;
+    const newErrors = {
+      name: "",
+      email: "",
+      message: "",
+    };
+
+    if (!formState.name.trim()) {
+      newErrors.name = "Name is required";
+      valid = false;
+    }
+
+    if (!formState.email.trim()) {
+      newErrors.email = "Email is required";
+      valid = false;
+    } else if (!/^\S+@\S+\.\S+$/.test(formState.email)) {
+      newErrors.email = "Please enter a valid email address";
+      valid = false;
+    }
+
+    if (!formState.message.trim()) {
+      newErrors.message = "Message is required";
+      valid = false;
+    }
+
+    setErrors(newErrors);
+    return valid;
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!formState.name || !formState.email || !formState.message) {
+    if (!validateForm()) {
       setStatus({
         submitting: false,
         submitted: true,
         success: false,
-        message: "Please fill all fields",
+        message: "Please correct the errors in the form.",
       });
       return;
     }
@@ -276,23 +324,20 @@ const Contact = () => {
     });
 
     try {
-      // Replace with your EmailJS service ID, template ID, and user ID
-      const result = await emailjs.sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+      await emailjs.sendForm(
+        emailjsConfig.serviceId,
+        emailjsConfig.templateId,
         formRef.current,
-        "YOUR_USER_ID"
+        emailjsConfig.publicKey
       );
 
-      if (result.status === 200) {
-        setStatus({
-          submitting: false,
-          submitted: true,
-          success: true,
-          message: "Message sent successfully!",
-        });
-        setFormState({ name: "", email: "", message: "" });
-      }
+      setStatus({
+        submitting: false,
+        submitted: true,
+        success: true,
+        message: "Message sent successfully!",
+      });
+      setFormState({ name: "", email: "", message: "" });
     } catch (error) {
       console.error("Failed to send email:", error);
       setStatus({
@@ -305,10 +350,17 @@ const Contact = () => {
   };
 
   const handleChange = (e) => {
+    const { name, value } = e.target;
     setFormState({
       ...formState,
-      [e.target.name]: e.target.value,
+      [name]: value,
     });
+    if (errors[name]) {
+      setErrors({
+        ...errors,
+        [name]: "",
+      });
+    }
   };
 
   const contactVariants = {
@@ -346,6 +398,7 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder="Your Name"
               />
+              {errors.name && <ErrorText>{errors.name}</ErrorText>}
             </FormGroup>
             <FormGroup>
               <Label htmlFor="email">Email</Label>
@@ -357,6 +410,7 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder="Your Email"
               />
+              {errors.email && <ErrorText>{errors.email}</ErrorText>}
             </FormGroup>
             <FormGroup>
               <Label htmlFor="message">Message</Label>
@@ -367,6 +421,7 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder="Your Message"
               />
+              {errors.message && <ErrorText>{errors.message}</ErrorText>}
             </FormGroup>
 
             <SubmitButton
@@ -427,7 +482,7 @@ const Contact = () => {
                 <ContactText>
                   <ContactLabel>Phone</ContactLabel>
                   <ContactValue href="tel:+917003588060">
-                    +91-700-358-8060
+                    +91-7003588060
                   </ContactValue>
                 </ContactText>
               </ContactDetail>
