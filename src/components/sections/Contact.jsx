@@ -262,9 +262,9 @@ const Contact = () => {
   const formRef = useRef(null);
 
   const emailjsConfig = {
-    serviceId: "",
-    templateId: "",
-    publicKey: "",
+    serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID,
+    templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+    publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
   };
 
   useEffect(() => {
