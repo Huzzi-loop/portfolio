@@ -104,9 +104,12 @@ const Experience = () => {
       icon: <FiBriefcase />,
       iconBackground: "#6c63ff",
       achievements: [
-        "Built fault-tolerant sync APIs using AWS that process hundreds of daily requests",
+        "Developed a real time service to sync changes between the client and server",
+        "Built fault-tolerant sync APIs using AWS that process thousands of daily requests",
         "Scaled microservices architecture to support 500+ concurrent users",
         "Developed internal admin tools with React for improved team productivity",
+        "Implemented CI/CD pipelines using GitHub Actions and AWS CodePipeline",
+        "Developed and maintained User Service and Product Service using Node.js and Express",
         "Optimized Redis caching and SQL queries for 40% faster response times",
         "Mentored junior engineers and led bi-weekly code reviews",
       ],
@@ -123,6 +126,19 @@ const Experience = () => {
         "Performed backend load testing with JMeter to identify performance bottlenecks",
         "Participated in daily stand-ups and agile development process",
         "Received early promotion to full-time role based on performance",
+      ],
+    },
+    {
+      title: "Intern",
+      company: "Dot Com Solutions",
+      duration: "May 2019 – Aug 2019",
+      icon: <FiCode />,
+      iconBackground: "#4a6bff",
+      achievements: [
+        "Assisted in the development of a new company website",
+        "Built scalable apps using React Native",
+        "Helped in setting up and coding the backend using PHP and MySQL",
+        "Performed backend load testing with JMeter to identify performance bottlenecks",
       ],
     },
   ];
