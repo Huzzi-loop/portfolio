@@ -322,7 +322,7 @@ const Projects = () => {
       title: "Quotation App",
       description:
         "A desktop application for creating and managing business quotations with ChatGPT integration for automated formatting and content suggestions.",
-      image: "/src/assets/projects/quotation.png",
+      image: "assets/projects/quotation.png",
       techStack: ["Electron", "React", "Node.js", "MySQL"],
       highlights: [
         "Used by 5+ clients, 1000+ quotations",
@@ -336,7 +336,7 @@ const Projects = () => {
       title: "E-Commerce Platform",
       description:
         "A scalable e-commerce platform built with microservice architecture, featuring secure payment processing and authentication.",
-      image: "/src/assets/projects/ecommerce.png",
+      image: "assets/projects/ecommerce.png",
       techStack: ["Java", "Spring Boot", "Stripe", "OAuth2", "Redis"],
       highlights: [
         "Microservice architecture",
@@ -350,7 +350,7 @@ const Projects = () => {
       title: "In-Memory Cache System",
       description:
         "An efficient in-memory caching system implementing popular eviction algorithms and extensible design patterns for optimal performance.",
-      image: "/src/assets/projects/cache.png",
+      image: "assets/projects/cache.png",
       techStack: ["Java", "Design Patterns", "Algorithms"],
       highlights: [
         "Implements LRU/Random eviction",
@@ -363,7 +363,7 @@ const Projects = () => {
       title: "Sorting Visualizer",
       description:
         "A web-based sorting visualizer that demonstrates various sorting algorithms in real-time, helping users understand their efficiency and mechanics.",
-      image: "/src/assets/projects/sorting.png",
+      image: "assets/projects/sorting.png",
       techStack: ["React", "DSA"],
       highlights: [
         "Implements sorting algorithms like BubbleSort, SelectionSort, QuickSort and MergeSort",

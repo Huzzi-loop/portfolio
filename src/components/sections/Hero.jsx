@@ -414,7 +414,7 @@ const Hero = () => {
             }}
           >
             <img
-              src="/src/assets/profile.png"
+              src="assets/profile.png"
               alt="Huzefa Chaiwala"
               style={{
                 width: "100%",
