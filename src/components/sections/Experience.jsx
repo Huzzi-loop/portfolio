@@ -98,6 +98,14 @@ const Experience = () => {
 
   const experiences = [
     {
+      title: "Software Engineer 2",
+      company: "Powerschool",
+      duration: "July 2025 – Present",
+      icon: <FiBriefcase />,
+      iconBackground: "#6c63ff",
+      achievements: [],
+    },
+    {
       title: "Software Engineer",
       company: "Wingsure",
       duration: "Feb 2022 – Present",
