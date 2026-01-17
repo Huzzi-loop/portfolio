@@ -22,8 +22,11 @@ import {
   SiNestjs,
   SiRedis,
   SiPrisma,
-  SiReactrouter,
   SiReacthookform,
+  SiPython,
+  SiDynamodb,
+  SiEventbridge,
+  SiMysql,
 } from "react-icons/si";
 import { GrSystem } from "react-icons/gr";
 import { TbApi } from "react-icons/tb";
@@ -181,9 +184,10 @@ const Skills = () => {
           name: "TypeScript",
           icon: <SiTypescript />,
           color: "#3178c6",
-          level: 65,
+          level: 70,
         },
-        { name: "Java", icon: <FaJava />, color: "#007396", level: 80 },
+        { name: "Java", icon: <FaJava />, color: "#007396", level: 60 },
+        { name: "Python", icon: <SiPython />, color: "#3776ab", level: 20 },
         { name: "SQL", icon: <FaDatabase />, color: "#f29111", level: 85 },
       ],
     },
@@ -198,7 +202,7 @@ const Skills = () => {
           name: "Spring Boot",
           icon: <SiSpringboot />,
           color: "#6db33f",
-          level: 75,
+          level: 30,
         },
         {
           name: "React Native",
@@ -217,12 +221,20 @@ const Skills = () => {
         { name: "AWS", icon: <FaAws />, color: "#ff9900", level: 90 },
         { name: "Redis", icon: <SiRedis />, color: "#dc382d", level: 75 },
         {
-          name: "MongoBD",
+          name: "MongoDB",
           icon: <FaLeaf color="green" />,
-          color: "#dc382d",
+          color: "#47a248",
           level: 65,
         },
-        { name: "Powersync", icon: <FaSync />, color: "#dc382d", level: 75 },
+        { name: "MySQL", icon: <SiMysql />, color: "#4479a1", level: 75 },
+        { name: "DynamoDB", icon: <SiDynamodb />, color: "#4053d6", level: 75 },
+        {
+          name: "EventBridge",
+          icon: <SiEventbridge />,
+          color: "#ff4f8b",
+          level: 65,
+        },
+        { name: "PowerSync", icon: <FaSync />, color: "#6c63ff", level: 75 },
       ],
     },
     {
@@ -230,9 +242,11 @@ const Skills = () => {
       skills: [
         { name: "DSA", icon: <FaSitemap />, level: 90 },
         { name: "REST APIs", icon: <TbApi />, level: 90 },
-        { name: "System Design", icon: <GrSystem />, level: 80 },
-        { name: "Microservices", icon: <BsServer />, level: 85 },
+        { name: "System Design", icon: <GrSystem />, level: 85 },
+        { name: "Microservices", icon: <BsServer />, level: 90 },
         { name: "Low-Level Design", icon: <SiReacthookform />, level: 80 },
+        { name: "Serverless", icon: <FaAws />, level: 80 },
+        { name: "Event-Driven", icon: <SiEventbridge />, level: 75 },
       ],
     },
   ];

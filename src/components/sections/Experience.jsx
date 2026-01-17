@@ -103,7 +103,11 @@ const Experience = () => {
       duration: "July 2025 – Present",
       icon: <FiBriefcase />,
       iconBackground: "#6c63ff",
-      achievements: [],
+      achievements: [
+        "Designed and deployed a serverless notification audit API using AWS Lambda and python, scaling to process 50K+ records daily.",
+        "Implemented a scalable OneFeed micro-frontend container using React and AWS, enabling multiple teams to independently deploy feature MFEs (News, Calendar, Announcements) that automatically integrate into a unified feed through configuration-driven onboarding.",
+        "Developed an event-driven ingestion component within the OneFeed backend using AWS EventBridge, Lambda, and DynamoDB to process News article events, with a shared event contract supporting future integrations.",
+      ],
     },
     {
       title: "Software Engineer",

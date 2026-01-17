@@ -199,7 +199,7 @@ const About = () => {
               animate={controls}
               variants={fadeInUpVariants}
             >
-              <FiUser /> Software Engineer based in India
+              <FiUser /> Software Engineer 2 | Based in India
             </AboutSubtitle>
 
             <AboutDescription
@@ -207,10 +207,12 @@ const About = () => {
               animate={controls}
               variants={fadeInUpVariants}
             >
-              I'm a software engineer who loves building backend systems,
-              scaling APIs, and creating intelligent apps. I specialize in
-              Node.js, Spring Boot, AWS, and React. I'm passionate about clean
-              architecture, solving business problems, and continuous learning.
+              I'm a software engineer who loves building scalable backend
+              systems, designing serverless architectures, and creating
+              intelligent micro-frontend applications. I specialize in Node.js,
+              Python, AWS, React, and modern cloud technologies. I'm passionate
+              about clean architecture, event-driven systems, and continuous
+              learning.
             </AboutDescription>
 
             <AboutDescription
@@ -220,9 +222,10 @@ const About = () => {
               transition={{ delay: 0.2 }}
             >
               My expertise includes designing efficient databases, implementing
-              secure authentication systems, and optimizing application
-              performance. I enjoy tackling complex challenges and transforming
-              business requirements into elegant technical solutions.
+              secure authentication systems, optimizing application performance,
+              and building real-time sync services. I enjoy tackling complex
+              challenges and transforming business requirements into elegant
+              technical solutions using cutting-edge technologies.
             </AboutDescription>
 
             <AboutQuote
@@ -257,18 +260,18 @@ const About = () => {
               <CodeLine lineNum="04" variants={lineVariants}>
                 &nbsp;&nbsp;
                 <Variable>this</Variable>.<Variable>title</Variable> ={" "}
-                <String>"Software Engineer"</String>;
+                <String>"Software Engineer 2"</String>;
               </CodeLine>
               <CodeLine lineNum="05" variants={lineVariants}>
                 &nbsp;&nbsp;
                 <Variable>this</Variable>.<Variable>location</Variable> ={" "}
-                <String>"Kolkata, India"</String>;
+                <String>"Bangalore, India"</String>;
               </CodeLine>
               <CodeLine lineNum="06" variants={lineVariants}>
                 &nbsp;&nbsp;
                 <Variable>this</Variable>.<Variable>skills</Variable> = [
-                <String>"Node.js"</String>, <String>"Java"</String>,{" "}
-                <String>"AWS"</String>, <String>"React"</String>];
+                <String>"Node.js"</String>, <String>"AWS"</String>,{" "}
+                <String>"React"</String>, <String>"DynamoDB"</String>];
               </CodeLine>
               <CodeLine lineNum="07" variants={lineVariants}>
                 &nbsp;
